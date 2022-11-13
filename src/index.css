@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.person-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.main-section {
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  height: 400px;
+  box-shadow: 3px 4px 4px;
+}
+
+.reviews {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.review {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.review.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.review.last {
+  transform: translateX(-100%);
+}
+
+.review.next {
+  transform: translateX(100%);
+}
+
+.btn-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 0.8rem;
+  border: none;
+  background-color: antiquewhite;
+}
+
+.job {
+  margin: 10px;
+}
